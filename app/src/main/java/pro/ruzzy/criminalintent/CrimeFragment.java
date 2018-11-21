@@ -204,7 +204,7 @@ public class CrimeFragment extends Fragment {
             }
         } else if (requestCode == REQUEST_PHOTO) {
             Uri uri = FileProvider.getUriForFile(getActivity(),
-                    "com.bignerdranch.android.criminalintent.fileprovider",
+                    "pro.ruzzy.criminalintent.fileprovider",
                     mPhotoFile);
             getActivity().revokeUriPermission(uri,
                     Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
